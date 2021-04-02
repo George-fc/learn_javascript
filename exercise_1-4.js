@@ -81,9 +81,3 @@
 //   }
 // }
 // miFuncion4("Hola que tal", 33);
-//hola
-//buenas
-function saludo() {
-  alert("hola");
-}
-saludo();
