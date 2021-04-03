@@ -44,16 +44,16 @@
 // validarTexto("Salas");
 // validarTexto("RoDaDoR");
 /* 8) Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5 */
-const eliminarCaracteres = (texto = "", patron = "") =>
-  !texto
-    ? console.warn("No ingresó un texto")
-    : !patron
-    ? console.warn("No ingresó un patron")
-    : console.info(texto.replace(new RegExp(patron, "ig"), ""));
-eliminarCaracteres();
-eliminarCaracteres("xyz1, xyz2, xyz3, xyz4 y xyz5");
-eliminarCaracteres("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");
-eliminarCaracteres(
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam modi tempore labore similique praesentium ab eveniet! Expedita necessitatibus aliquid quam debitis iste, explicabo maiores consectetur, rerum, in quaerat minus.",
-  "[a-t]"
-);
+// const eliminarCaracteres = (texto = "", patron = "") =>
+//   !texto
+//     ? console.warn("No ingresó un texto")
+//     : !patron
+//     ? console.warn("No ingresó un patron")
+//     : console.info(texto.replace(new RegExp(patron, "ig"), ""));
+// eliminarCaracteres();
+// eliminarCaracteres("xyz1, xyz2, xyz3, xyz4 y xyz5");
+// eliminarCaracteres("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");
+// eliminarCaracteres(
+//   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam modi tempore labore similique praesentium ab eveniet! Expedita necessitatibus aliquid quam debitis iste, explicabo maiores consectetur, rerum, in quaerat minus.",
+//   "[a-t]"
+// );
