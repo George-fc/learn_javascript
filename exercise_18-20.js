@@ -54,41 +54,41 @@
 // validarEmail("georgeflorescoca@gmail.com");
 
 //////////////EJERCICIO 19 + 20 /////////////////////
-const validarPatron = (cadena = "", patron = undefined) => {
-  if (!cadena) return console.error("El campo no puede estar vacio.");
-  if (typeof cadena !== "string")
-    return console.error(`El valor ${cadena} no es una cadena de texto`);
-  if (patron === undefined)
-    return console.warn("No ingresó el patron a evaluar");
-  if (!(patron instanceof RegExp))
-    return console.warn(
-      `El valor ${patron} no es una expresion regular valida`
-    );
-  let expReg = patron.test(cadena);
-  return expReg
-    ? console.info(`${cadena}, es una cadena con patron valido.`)
-    : console.warn(`${cadena}, es un cadena con patron No valido.`);
-};
-validarPatron();
-validarPatron("a");
-validarPatron({});
-validarPatron("holi", "que tal");
-validarPatron("holi", 123);
-//Nombre
-validarPatron("George Flores", /^[A-Za-zÑñÁÉÍÓÚáéíóú\s]+$/g);
-validarPatron("George Flores19", /^[A-Za-zÑñÁÉÍÓÚáéíóú\s]+$/g);
-//Email
-validarPatron(
-  "GeorgeFloresCoca@gmail",
-  new RegExp(
-    "/[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})/",
-    "i"
-  )
-);
-validarPatron(
-  "GeorgeFloresCoca@gmail",
-  new RegExp(
-    "[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})",
-    "i"
-  )
-);
+// const validarPatron = (cadena = "", patron = undefined) => {
+//   if (!cadena) return console.error("El campo no puede estar vacio.");
+//   if (typeof cadena !== "string")
+//     return console.error(`El valor ${cadena} no es una cadena de texto`);
+//   if (patron === undefined)
+//     return console.warn("No ingresó el patron a evaluar");
+//   if (!(patron instanceof RegExp))
+//     return console.warn(
+//       `El valor ${patron} no es una expresion regular valida`
+//     );
+//   let expReg = patron.test(cadena);
+//   return expReg
+//     ? console.info(`${cadena}, es una cadena con patron valido.`)
+//     : console.warn(`${cadena}, es un cadena con patron No valido.`);
+// };
+// validarPatron();
+// validarPatron("a");
+// validarPatron({});
+// validarPatron("holi", "que tal");
+// validarPatron("holi", 123);
+// //Nombre
+// validarPatron("George Flores", /^[A-Za-zÑñÁÉÍÓÚáéíóú\s]+$/g);
+// validarPatron("George Flores19", /^[A-Za-zÑñÁÉÍÓÚáéíóú\s]+$/g);
+// //Email
+// validarPatron(
+//   "GeorgeFloresCoca@gmail",
+//   new RegExp(
+//     "/[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})/",
+//     "i"
+//   )
+// );
+// validarPatron(
+//   "GeorgeFloresCoca@gmail",
+//   new RegExp(
+//     "[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})",
+//     "i"
+//   )
+// );
